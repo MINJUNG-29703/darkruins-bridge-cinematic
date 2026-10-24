@@ -60,7 +60,6 @@
     "secret_pattern_findings": 0,
     "source_config_descriptor_sha_matches": 5,
     "source_config_descriptor_sha_mismatches": 0,
-    "remote_count": 0,
     "clean_clone": {
       "status": "passed",
       "checked_utc": "2026-10-24T11:05:27.387719+00:00",
@@ -78,9 +77,39 @@
     "status": "local_commit_and_clean_clone_passed"
   },
   "remote": {
-    "upload_performed": false,
-    "account_lfs_remaining": "unknown",
-    "spending_stop": "unverified",
-    "authentication": "device_flow_expired_without_completion"
+    "repository": "https://github.com/MINJUNG-29703/darkruins-bridge-cinematic",
+    "owner": "MINJUNG-29703",
+    "visibility": "private",
+    "branch": "main",
+    "upload_performed": true,
+    "verified_payload_commit": "53964939f3c44bf1049635d076b9ffa6fc813967",
+    "verified_utc": "2026-10-24T13:00:42.106383+00:00",
+    "initial_push_exit_code": 0,
+    "lfs_object_count": 1799,
+    "lfs_logical_content_bytes": 7566937322,
+    "lfs_GiB": 7.047259548678994,
+    "server_lfs_completion_check": {
+      "command": "git lfs push --all origin main",
+      "exit_code": 0,
+      "objects_completed": 1799,
+      "objects_total": 1799,
+      "reported_transfer_rate": "0 B/s",
+      "elapsed_seconds": 9.2244462,
+      "lfs_download_performed": false,
+      "note": "Normal server upload path, not dry-run. All objects completed without errors."
+    },
+    "authentication": "GitHub CLI; MINJUNG-29703; Windows keyring",
+    "quota_basis": {
+      "user_confirmed_first_lfs_use": true,
+      "included_storage_bytes": 10737418240,
+      "account_usage_api_result": "404 Not Found; actual billing usage not independently read",
+      "spending_stop": "unverified; unchanged",
+      "additional_charges_authorized": false,
+      "billing_budget_plan_changes": false
+    },
+    "collaborators_invited": 0,
+    "force_push_used": false,
+    "remote_full_asset_redownload": false,
+    "subsequent_change_scope": "README and validation documentation only; no new asset versions"
   }
 }

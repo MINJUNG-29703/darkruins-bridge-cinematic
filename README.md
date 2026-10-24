@@ -5,17 +5,19 @@
 ## 프로젝트 열기
 
 1. Unreal Engine **5.8**, Git, Git LFS를 준비합니다. 엔진 자체는 저장소에 포함하지 않습니다.
-2. 저장소를 일반 Git clone으로 내려받고 아래 명령으로 실제 바이너리를 받습니다. GitHub ZIP만 내려받으면 LFS 포인터만 들어 있을 수 있습니다.
+2. 저장소 접근 권한이 있는 GitHub 계정으로 인증한 뒤, 아래 명령으로 프로젝트와 실제 바이너리를 받습니다. GitHub ZIP만 내려받으면 LFS 포인터만 들어 있을 수 있습니다.
 
    ```powershell
    git lfs install
+   git clone https://github.com/MINJUNG-29703/darkruins-bridge-cinematic.git
+   cd darkruins-bridge-cinematic
    git lfs pull
    git lfs fsck
    ```
 
-3. `DarkRuins_Bridge_Cinematic.uproject`를 UE 5.8로 엽니다. 최초 셰이더·캐시 생성에는 시간이 필요합니다.
+3. LFS 검사 성공 후 `DarkRuins_Bridge_Cinematic.uproject`를 UE 5.8로 엽니다. 최초 셰이더·캐시 생성에는 시간이 필요합니다.
 4. 맵 **`/Game/Main`**을 엽니다. 기본 시작 맵도 Main입니다.
-5. 콘텐츠 브라우저의 **`/Game/BridgeTransfer_20261017/Sequences/LS_WeaponShot02_Bridge`**를 열고 Sequencer에서 카메라 컷을 따라 재생합니다.
+5. 콘텐츠 브라우저의 **`/Game/BridgeTransfer_20261017/Sequences/LS_WeaponShot02_Bridge`**를 열고 Sequencer의 **카메라 컷 잠금**을 켜서 재생합니다.
 
 프로젝트에 선언된 플러그인은 Water, WaterExtras, AlembicImporter, CableComponent, PythonScriptPlugin, EditorScriptingUtilities, SequencerScripting, MovieRenderPipeline입니다. 의존성 검사에서 사용한 엔진 측 경로는 Engine, Script, Niagara, ACLPlugin, InterchangeAssets입니다. 해당 구성요소를 포함한 UE 5.8 설치가 필요합니다.
 
@@ -53,6 +55,10 @@ Docs/                   파일 manifest, 의존성, 검증 기록
 
 ## 저장소 운영
 
-이 프로젝트는 비공개 저장소 사용을 전제로 준비했습니다. Megascans·Paragon 등 외부 자산은 각 자산의 원래 이용 조건을 따릅니다. 저장소 접근 권한을 부여하기 전에 수신자의 사용 자격을 확인하고, 공개 저장소로 전환하거나 자산만 따로 재배포하지 마세요. 이 저장소는 외부 자산에 새 라이선스를 부여하지 않습니다.
+2026-10-24 [GitHub 비공개 저장소](https://github.com/MINJUNG-29703/darkruins-bridge-cinematic)의 `main`에 자산 포함 업로드를 완료했습니다. 서버 커밋 일치와 전체 LFS 1,799개 처리 성공을 확인했으며, 검증용 전체 LFS 재다운로드는 하지 않았습니다. 실제 파일 복원·SHA 검사는 앞서 완료한 로컬 clean clone 결과를 사용합니다.
 
-LFS 바이너리는 수정 버전마다 전체 파일 용량이 추가될 수 있습니다. 최초 프로젝트가 10GB 미만이어도 계정 전체의 기존 사용량에 따라 무료 한도를 넘을 수 있으므로 업로드 전 실제 잔여량과 지출 차단 설정을 확인해야 합니다. 이 문서는 원격 업로드 완료나 무료 잔여량 확보를 뜻하지 않습니다.
+Megascans·Paragon 등 외부 자산은 각 자산의 원래 이용 조건을 따릅니다. 저장소 접근 권한을 부여하기 전에 수신자의 사용 자격을 확인하고, 공개 저장소로 전환하거나 자산만 따로 재배포하지 마세요. 이 저장소는 외부 자산에 새 라이선스를 부여하지 않습니다.
+
+현재 다른 사람은 초대하지 않았습니다. 개인 비공개 저장소의 협업자 권한에는 쓰기가 포함됩니다. 파일을 읽고 피드백만 하는 접근이 필요하면 조직 저장소의 Read 역할을 사용해야 합니다.
+
+LFS 바이너리는 수정 버전마다 전체 파일 용량이 추가될 수 있습니다. 이번 최초 업로드는 소유자가 해당 계정에서 LFS를 처음 사용한다고 확인한 뒤, 포함 용량 10GiB 이내의 7.0473GiB 자산으로 진행했습니다. Billing API의 실제 사용량은 조회되지 않았으며 예산·결제·플랜 설정은 변경하지 않았습니다. 후속 수정·추가 업로드와 다른 사람의 다운로드 전에는 남은 저장·다운로드 한도를 확인하세요.
