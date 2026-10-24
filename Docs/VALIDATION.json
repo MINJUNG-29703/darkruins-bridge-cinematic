@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-24",
+  "project": "DarkRuins_Bridge_Cinematic.uproject",
+  "entry_map": "/Game/Main",
+  "sequence": "/Game/BridgeTransfer_20261017/Sequences/LS_WeaponShot02_Bridge",
+  "payload": {
+    "file_count": 1804,
+    "bytes": 7567000541,
+    "asset_file_count": 1799,
+    "unique_asset_objects": 1799,
+    "unique_asset_sha256_bytes": 7566937322,
+    "hardlinks_used": false
+  },
+  "engine_validation": {
+    "mode": "fresh UE 5.8 NullRHI",
+    "status": "fresh_validation_and_final_closure_complete",
+    "descriptor_count": 912,
+    "automatically_loaded_actor_count": 912,
+    "camera_sample_frames": 223,
+    "all_223_camera_frames_match": true,
+    "sequence_keys_match": true,
+    "missing_packages": [],
+    "removed_packages_still_referenced": [],
+    "actor2_and_shoot2_bindings": "validated by implementation owner and independently inspected as metadata",
+    "save_calls": 0,
+    "dirty_maps_on_evaluation": [
+      "/Game/__ExternalActors__/Main/2/CS/LFB9R27NB1STV85DUZ2NV3"
+    ],
+    "dirty_content": [],
+    "gpu_visual_validation": false
+  },
+  "source_preservation": {
+    "checked_file_count": 12103,
+    "changed_or_missing_count": 0,
+    "new_file_count": 0,
+    "method": "all saved source file size + nanosecond mtime compared against pre-copy snapshot",
+    "full_rehash_performed": false,
+    "original_asset_write_calls": 0
+  },
+  "evidence_sha256": {
+    "slim_final_export_receipt.json": "6b7b64b6b6415b9bb0fc455d083aa9b552148b6ffae3c6c0ce7f8e83ea177628",
+    "slim_final_project_fresh_validation.json": "95649c91b5bff1f5513412e4f6adc385483d3de583535ae26b7504047c18a1de",
+    "slim_original_source_final_invariance.json": "a5bc178dc4e2ba2768a41ddda6df15f783b6e14211c399d16f47e5b618bfe6d6",
+    "slim_technical_completion_20261024.json": "b3f6914004876e96f4a90e9614a00ffb8b59b1ed9877963f6bed67f2c10436fa"
+  },
+  "git_validation": {
+    "checked_utc": "2026-10-24T11:00:57.612134+00:00",
+    "tracked_file_count": 1811,
+    "payload_files": 1804,
+    "lfs_pointer_files": 1799,
+    "unique_lfs_object_count": 1799,
+    "unique_lfs_bytes": 7566937322,
+    "payload_pointer_sha_size_mismatches": 0,
+    "ordinary_blob_count": 12,
+    "largest_ordinary_blob_bytes": 634250,
+    "ordinary_blobs_over_50MB": 0,
+    "cache_files_tracked": 0,
+    "secret_scan_text_files": 12,
+    "secret_pattern_findings": 0,
+    "source_config_descriptor_sha_matches": 5,
+    "source_config_descriptor_sha_mismatches": 0,
+    "remote_count": 0,
+    "clean_clone": "pending"
+  },
+  "remote": {
+    "upload_performed": false,
+    "account_lfs_remaining": "unknown",
+    "spending_stop": "unverified"
+  }
+}

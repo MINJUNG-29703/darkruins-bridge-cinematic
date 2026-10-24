@@ -1,0 +1,34 @@
+# Unreal-generated data; keep local working files intact.
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/.vs/
+/.idea/
+/.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Preserve precompiled plugin binaries if a plugin is added later.
+/Plugins/**/Intermediate/
+/Plugins/**/Saved/
+/Plugins/**/DerivedDataCache/
+
+/MovieRenders/
+/Logs/
+/Temp/
+/Cache/
+**/__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Content, Config and World Partition external packages are required project data.
