@@ -61,11 +61,26 @@
     "source_config_descriptor_sha_matches": 5,
     "source_config_descriptor_sha_mismatches": 0,
     "remote_count": 0,
-    "clean_clone": "pending"
+    "clean_clone": {
+      "status": "passed",
+      "checked_utc": "2026-10-24T11:05:27.387719+00:00",
+      "method": "fresh local git clone --no-hardlinks --no-checkout; local LFS install; checkout; full restored payload SHA-256 comparison",
+      "payload_commit": "debea391305952a7b77c01d6fa5529ead7c60734",
+      "payload_file_count": 1804,
+      "payload_bytes": 7567000541,
+      "sha256_mismatches": [],
+      "tracked_file_count": 1811,
+      "working_tree_clean": true,
+      "cache_files_tracked": 0,
+      "engine_started": false,
+      "network_transfer": false
+    },
+    "status": "local_commit_and_clean_clone_passed"
   },
   "remote": {
     "upload_performed": false,
     "account_lfs_remaining": "unknown",
-    "spending_stop": "unverified"
+    "spending_stop": "unverified",
+    "authentication": "device_flow_expired_without_completion"
   }
 }
